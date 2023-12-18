@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/backgroundpaintgarage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/backgroundpaintgarage"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/backgroundpaintgarage720x1280" />
+
+    <LinearLayout
+
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/obelix_pro"
+                android:gravity="center"
+                android:shadowColor="@color/white"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="5"
+                android:text="999999"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="999999"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gold_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_gradient"
+                android:padding="8dp"
+                android:text="@string/txt_gold"
+                android:textSize="30sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/goto_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/yellow1"
+                android:contentDescription="@string/CardDescription"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/pg_5"
+                app:fabSize="auto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/garage89"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="225dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_0" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/style_cardview5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/tool_img"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/tool_a" />
+
+                    <TextView
+                        android:id="@+id/tool_txt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="4"
+                        android:padding="5dp"
+                        android:text="@string/tool"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--***поле item ProgressBar-->
+    <!--49 строка тег style - указываем стиль в виде полосы, есть еще круга-->
+    <!--52 строка тег progress - устанавливаем максимальное значение ProgressBara-->
+    <!--53 строка progress - указываем свое временное значение ProgressBara-->
+    <!--два значение ProgressBara +-->
+    <!--+ Determinate mode - точное значение счетчика, (по умолчанию) можно определить % совершенной работы+-->
+    <!--+ Indeterminate mode - неопределенное значение счетчика, нельзя определить % совершенной работы-->
+    <!--54 строка progressDrawable - указываем свой созданный стиль-->
+    <!--68 строка ориентация внутри контейнера  по центру-->
+    <!--69 строка - применяем стиль yellow_gradient к TextView gold_txt -->
+    <!--81 строка - применяем стиль ic_plus к Material Design goto_shop-->
+    <!--82 строка - цвет плюса-->
+    <!--83 строка - цвет иконки-->
+    <!--84 строка - применяем тег fabSize для масштабируемого размера плюса-->
+    <!--102 строка - тег scaleType - сохранение пропорций картинки-->
+    <!--114 строка - добавляем карточку, в которой будет картинка, стиль и текст-->
+    <!--119 строка - тег foreground - добавим атрибут карточке с эффектом нажатия-->
+    <!--117 строка - тег clickable - добавим атрибут нажатия-->
+    <!--120 строка - тег cardBackgroundColor - прозрачный фон кнопки-->
+    <!--121 строка - тег cardCornerRadius - круглые углы-->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/background">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:startColor="@color/pg_1"
+                android:centerColor="@color/pg_2"
+                android:endColor="@color/pg_3"
+                android:centerY="1.0"         />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <item android:id="@+id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:endColor="@color/pg_4"
+                    android:startColor="@color/pg_5"
+                    android:useLevel="false" />
+                <corners android:radius="10dp" />
+            </shape>
+
+        </clip>
+    </item>
+
+
+</layer-list>
+    <!--*** первое поле item-->
+    <!-- 3 строка - задний фон Progress bara-->
+    <!-- 4 строка - форма Progress bara-->
+    <!--5 строка - цвет Progress bara - линейный градиент по умолчанию-->
+    <!--6 строка - округление градиента у Progress bara +-->
+    <!--+ угол, под которым градиент будет отрисован, должно быть кратно 45-->
+    <!--7 строка -Начальный цвет Progress bara-->
+    <!--8 строка -Серединный цвет Progress bara-->
+    <!--9 строка -Конечный цвет Progress bara-->
+    <!--10 строка - centerY Progress bara - сдвигает центральную точку градиента по оси Y+-->
+    <!--+ мин.значение 0.0, макс.значение 1.0-->
+
+    <!--*** второе поле item-->
+    <!-- 15 строка progress - стиль самой линии Progress bara-->
+    <!-- 16 строка - тег clip - обрезка градиента-->
+    <!-- 21 строка - тег useLevel - если сами рисуем Progress bar, иначе может не показать -->
+    <!-- 22 строка - тег corners - округление углов-->

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Garage89</string>
+    <string name="txt_gold">Gold:</string>
+    <string name="tool">Tool</string>
+    <string name="start_over">Start over</string>
+    <string name="toolx2">Tool x2</string>
+    <string name="toolx5">Tool x5</string>
+    <string name="toolx10">Tool x10</string>
+    <string name="toolx50">Tool x50</string>
+    <string name="back_to_game">Back to game</string>
+    <string name="back_to_shop">Back to shop</string>
+    <string name="the_shop">The shop</string>
+    <string name="select_tool">Select tool:</string>
+    <string name="selected">Selected</string>
+    <string name="x2">10000$</string>
+    <string name="x5">60000$</string>
+    <string name="x10">140000$</string>
+    <string name="x50">250000$</string>
+    <string name="buy_gold">Buy gold</string>
+    <string name="successful_purchase">Successful purchase</string>
+    <string name="CardDescription">здесь карточка</string>
+    <string name="completed">Completed!</string>
+    <string name="backgroundpaintgarage">задний фон</string>
+
+
+</resources>

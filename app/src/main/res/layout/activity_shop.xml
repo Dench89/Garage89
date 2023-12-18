@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Shop">
+
+    <ImageView
+        android:id="@+id/backgroundpaintgarage_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/backgroundpaintgarage"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/backgroundpaintgarage720x1280_shop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back_arrow"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="@string/back_to_game"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_btn_arrow_back"
+            app:iconSize="30sp"
+            app:iconTint="@color/white"
+            app:rippleColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/obelix_pro"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="@string/the_shop"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gold_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_gradient"
+                android:padding="8dp"
+                android:text="@string/txt_gold"
+                android:textSize="30sp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/goto_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/yellow1"
+                android:contentDescription="@string/CardDescription"
+                android:src="@drawable/ic_plus"
+                android:tint="@color/pg_5"
+                app:fabSize="auto" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/obelix_pro"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="@string/select_tool"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tool_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/tool_a_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_cardview_selected"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/tool_a" />
+
+                <TextView
+                    android:id="@+id/tool_txt_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/obelix_pro"
+                    android:padding="5dp"
+                    android:text="@string/tool"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/selected_a"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/selected"
+                    android:textColor="@color/teal_700"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tool_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/tool_b_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_cardview5"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/tool_b" />
+
+                <TextView
+                    android:id="@+id/tool_txt_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="@string/toolx2"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/selected_b"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/x2"
+                    android:textColor="@color/yellow1"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tool_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/tool_c_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_cardview5"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/tool_c" />
+
+                <TextView
+                    android:id="@+id/tool_txt_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+
+                    android:padding="5dp"
+                    android:text="@string/toolx5"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/selected_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/x5"
+                    android:textColor="@color/yellow1"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tool_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/tool_d_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_cardview5"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/tool_d" />
+
+                <TextView
+                    android:id="@+id/tool_txt_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="@string/toolx10"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/selected_d"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/x10"
+                    android:textColor="@color/yellow1"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tool_e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:id="@+id/tool_e_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_cardview5"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:src="@drawable/tool_e" />
+
+                <TextView
+                    android:id="@+id/tool_txt_e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:text="@string/toolx50"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/selected_e"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/x50"
+                    android:textColor="@color/yellow1"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    <!--style/Widget.MaterialComponents.Button.TextButton - прозрачная кнопка-->
+    <!--rippleColor - черный эффект на кнопке-->
+    <!--iconTint - цвет иконки белый-->
+    <!--layout_weight="0.9" общая площадь занимаемого прострасства до 1-->
+    <!--идет с параметром layout_height="0dp"-->
+    <!--layout_marginTop - внешний сверху отступ-->

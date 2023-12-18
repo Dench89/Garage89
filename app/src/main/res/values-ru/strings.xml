@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Гараж 89</string>
+    <string name="txt_gold">Золото:</string>
+    <string name="tool">Киянка</string>
+    <string name="start_over">начать сначала</string>
+    <string name="toolx2">Киянка x2</string>
+    <string name="toolx5">Киянка x5</string>
+    <string name="toolx10">Киянка x10</string>
+    <string name="toolx50">Киянка x50</string>
+    <string name="back_to_game">Обратно в игру</string>
+    <string name="back_to_shop">Обратно в магазин</string>
+    <string name="the_shop">магазин</string>
+    <string name="select_tool">выбор киянки:</string>
+    <string name="selected">выбор</string>
+    <string name="x2">10000$</string>
+    <string name="x5">60000$</string>
+    <string name="x10">140000$</string>
+    <string name="x50">250000$</string>
+    <string name="buy_gold">Купить золото</string>
+    <string name="successful_purchase">Удачная покупка!</string>
+    <string name="CardDescription">здесь карточка</string>
+    <string name="backgroundpaintgarage">задний фон</string>
+    <string name="completed">Победа!</string>
+
+
+</resources>
